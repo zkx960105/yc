@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="{$eyou.field.seo_keywords}">
+	<!-- 页面描述 -->
+	<meta name="description" content="{$eyou.field.seo_description}">
+	<title>{$eyou.field.seo_title}</title>
+    <link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/aos.css">
+    <link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/swiper.min.css">
+    <link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/main.css">
+
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/aos.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/swiper.min.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/dyfrom.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/main.js"></script>
+</head>
+
+<body>
+    {eyou:include file='header.htm' /}
+    <div class="nbanner">
+        <img src="{eyou:global name='web_templets_pc' /}/skin/imgs/bmskc.jpg">
+    </div>
+    {eyou:include file='searchbar.htm' /}
+    <div class="aiyihemacom">
+        <div class="wenzhagnbiaoti">
+            <div class="wenzhagnbiaoticom">
+                <div class="navcom_a">
+                    <span><img src="{eyou:global name='web_templets_pc' /}/skin/imgs/home.png"></span>
+                    <a href="http://www.ayhmjy.com/new/75.html">江西</a><i class="layui-icon-right"></i><a
+                        href="http://www.ayhmjy.com/new/279.html">美术统考</a><i class="layui-icon-right"></i><a
+                        href="http://www.ayhmjy.com/new/281.html">联考公告</a>
+                </div>
+                <!--文章内容-->
+                <div class="wenzhangcom">
+                    <div class="wenzhangcom_left_textcom">
+                        {$eyou.field.content}
+                    </div>
+                    <div class="wenzhangcom_right">
+                        <div class="guanggao">
+                            <a href="http://www.ayhmjy.com/new/700.html"><img
+                                    src="{eyou:global name='web_templets_pc' /}/skin/imgs/4cfc973a35eca6e1fe167c5ed13f26e7.jpg"></a>
+                        </div>
+                        <div class="kanneirong">
+                            {eyou:artlist loop="4"  typeid="85"  titlelen="15" }
+                            <a href="{$field.arcurl}">
+                                <i class="dian"></i>
+                                <span class="titi_name">{$field.title}</span>
+                                <label>{$field.add_time|MyDate='Y-m-d',###}</label>
+                            </a>
+                            {/eyou:artlist}
+                        </div>
+                        <!-- <div class="rmore"><a><span>更多 >></span></a></div> -->
+                    </div>
+                </div>
+            </div>
+            <!--热门阅读-->
+            <!-- <div class="yueducom" style="padding-bottom:80px;">
+                <div class="warpper">
+                    <div class="youcomnav">
+                        <div class="title">
+                            <strong>热门阅读</strong><span>HOT READING</span>
+                        </div>
+                    </div>
+                    <div class="yuedubox">
+                        <a href="http://www.ayhmjy.com/detail/22029.html">
+                            <i class="dian"></i>
+                            <span class="titi_name">江西省2023年艺术类专业考试招生工作实施意见</span>
+                            <label class="titi_data">2022-12-02</label>
+                        </a>
+                        <a href="http://www.ayhmjy.com/detail/21881.html">
+                            <i class="dian"></i>
+                            <span class="titi_name">江西省2023年艺术类专业考试招生工作实施意见</span>
+                            <label class="titi_data">2022-11-09</label>
+                        </a>
+                        <a href="http://www.ayhmjy.com/detail/21666.html">
+                            <i class="dian"></i>
+                            <span class="titi_name">2023年江西美术统考考试大纲</span>
+                            <label class="titi_data">2022-10-18</label>
+                        </a>
+                        <a href="http://www.ayhmjy.com/detail/21665.html">
+                            <i class="dian"></i>
+                            <span class="titi_name">2023年江西省音乐学类专业统一考试大纲</span>
+                            <label class="titi_data">2022-10-18</label>
+                        </a>
+                        <a href="http://www.ayhmjy.com/detail/21664.html">
+                            <i class="dian"></i>
+                            <span class="titi_name">2023年江西省舞蹈学类专业统一考试大纲</span>
+                            <label class="titi_data">2022-10-18</label>
+                        </a>
+                        <a href="http://www.ayhmjy.com/detail/21663.html">
+                            <i class="dian"></i>
+                            <span class="titi_name">2023年江西省戏剧与影视学类专业统一考试大纲（广播电视编导）</span>
+                            <label class="titi_data">2022-10-18</label>
+                        </a>
+                        <a href="http://www.ayhmjy.com/detail/21662.html">
+                            <i class="dian"></i>
+                            <span class="titi_name">2023年江西省播音与主持艺术专业统一考试大纲</span>
+                            <label class="titi_data">2022-10-17</label>
+                        </a>
+                        <a href="http://www.ayhmjy.com/detail/21620.html">
+                            <i class="dian"></i>
+                            <span class="titi_name">2023年江西艺术校考相关要求</span>
+                            <label class="titi_data">2022-10-13</label>
+                        </a>
+                        <a href="http://www.ayhmjy.com/detail/21619.html">
+                            <i class="dian"></i>
+                            <span class="titi_name">2023年江西省艺术、体育类及其它特殊类型招生报考要求</span>
+                            <label class="titi_data">2022-10-13</label>
+                        </a>
+                        <a href="http://www.ayhmjy.com/detail/21618.html">
+                            <i class="dian"></i>
+                            <span class="titi_name">2023年江西省普通高等学校招生考试报名办法</span>
+                            <label class="titi_data">2022-10-13</label>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        {eyou:include file='footer.htm' /}
+        <!-- ayhmjy.com Baidu tongji analytics -->
+       
+
+
+
+    </div>
+</body>
+
+</html>

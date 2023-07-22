@@ -1,0 +1,252 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:33:"./template/pc/lists_single_us.htm";i:1689957200;s:40:"/data/user/htdocs/template/pc/header.htm";i:1689869392;s:40:"/data/user/htdocs/template/pc/footer.htm";i:1689869391;}*/ ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="<?php echo $eyou['field']['seo_keywords']; ?>">
+	<!-- 页面描述 -->
+	<meta name="description" content="<?php echo $eyou['field']['seo_description']; ?>">
+	<title><?php echo $eyou['field']['seo_title']; ?></title>
+    <link rel="stylesheet" href="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/css/aos.css">
+    <link rel="stylesheet" href="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/css/swiper.min.css">
+    <link rel="stylesheet" href="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/css/main.css">
+
+    <script type="text/javascript" src="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/js/aos.js"></script>
+    <script type="text/javascript" src="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/js/swiper.min.js"></script>
+    <script type="text/javascript" src="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/js/dyfrom.js"></script>
+    <script type="text/javascript" src="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/js/main.js"></script>
+</head>
+
+<body>
+
+
+  <div class="header">
+    <div class="warpper">
+        <div class="fl logo"><a href="http://www.ayhmjy.com/"><img
+                    src="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/img/8a43ef8143d62d3e290f4604490e1b67.png"></a></div>
+        <div class="fr nav">
+            <ul>
+                <li class="active"><a href="http://www.ayhmjy.com/">首页</a></li>
+                <li class=""><a href="http://www.ayhmjy.com/new/700.html">面授课程</a></li>
+                <li class=""><a href="http://www.ayhmjy.com/new/1301.html">团队介绍</a></li>
+                <li class=""><a href="http://www.ayhmjy.com/new/23.html">作品展示</a></li>
+                <li class=""><a href="http://www.ayhmjy.com/new/1027.html">全国分校</a></li>
+                <li class=""><a href="http://www.ayhmjy.com/new/5317.html">美考资讯</a></li>
+                <li class=""><a href="http://www.ayhmjy.com/new/277.html">关于我们</a></li>
+            </ul>
+        </div>
+        <div></div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+  <!--中间内容-->
+  <div class="aboutus">
+    <div class="jj">
+      <div class="title">公司简介 <span>COMPANY PROFILE</span></div>
+      <div class="itr">
+        重庆艾艺荷马教育科技股份有限公司（以下简称“艾艺荷马”）原为重庆艾艺文化传播有限公司，成立于2009年。以素质教育、高考培训、学历教育、职业教育为主营业务，开展美术教育教学研发、配套教育软件开发、教学设施研发等相关项目，是专注于美育智慧教育的科技集团。
+      </div>
+      <div class="swiper-container swiper-container-initialized swiper-container-horizontal" id="jjswiper">
+        <div class="swiper-wrapper" id="swiper-wrapper-af1310d1b4a0c385a" aria-live="off"
+          style="transform: translate3d(-3552px, 0px, 0px); transition-duration: 0ms;">
+          <div class="swiper-slide" role="group" aria-label="1 / 4" style="width: 1184px;">
+            <img src="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/img/ab8847d0dfa20ac192ec548e30fc5840.jpg" alt="素质教育" title="素质教育">
+          </div>
+          <div class="swiper-slide" role="group" aria-label="2 / 4" style="width: 1184px;">
+            <img src="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/img/72ff89eabf3cd7208dbbef7a2e5594e5.png" alt="高考培训" title="高考培训">
+          </div>
+          <div class="swiper-slide swiper-slide-prev" role="group" aria-label="3 / 4" style="width: 1184px;">
+            <img src="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/img/e72579ec2b59044a0bc3a9e882c4446a.jpg" alt="学历教育" title="学历教育">
+          </div>
+          <div class="swiper-slide swiper-slide-active" role="group" aria-label="4 / 4" style="width: 1184px;">
+            <img src="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/img/30d79a2a79d8ffe9344cc4826cb8f650.jpg" alt="在线平台" title="在线平台">
+          </div>
+        </div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
+      <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-thumbs"
+        id="thumbs">
+        <div class="swiper-wrapper" id="swiper-wrapper-cbca55ce0d298bd2" aria-live="polite"
+          style="transition-duration: 0ms;">
+          <div class="swiper-slide swiper-slide-visible swiper-slide-active"
+            data-description="艾艺荷马以十七年的美术教育经验、优秀的教学成果和雄厚的美术课程教研能力为基础，进行美术教育课程与互联网互动教学的研发，教研内容包括中小学艺术兴趣课程、高中美术基础课程、美术高考，打造覆盖全龄段的素质教育平台，以面授、图书、网校三位一体的教学体系，提升孩子的美术素养。"
+            role="group" aria-label="1 / 4" style="width: 294.5px; margin-right: 2px;"><a href="javascript:ajax(15348);"
+              style="display: block;font-size: 30px;">素质教育</a></div>
+          <div class="swiper-slide swiper-slide-visible swiper-slide-next"
+            data-description="艾艺荷马累计为国内九大美院及全国31所重点院校输送艺术专业人才近万人。历年来美术艺考成绩突出。  艾艺荷马旗下拥有“荷马教育”、“重庆艺考”、“艾艺在线”、“新华荷马”等子教育品牌，与多家上市企业，以及众多中小学校、高校和政府有着广泛而深度的战略合作，已在重庆、北京、杭州、广州建立研发中心，建设25省建立联考基地。"
+            role="group" aria-label="2 / 4" style="width: 294.5px; margin-right: 2px;"><a href="javascript:ajax(15347);"
+              style="display: block;font-size: 30px;">高考培训</a></div>
+          <div class="swiper-slide swiper-slide-visible"
+            data-description="艾艺荷马以十七年的美术教育经验、优秀的教学成果和雄厚的美术课程教研能力为基础，进行美术教育课程与互联网互动教学的研发，教研内容包括中小学艺术兴趣课程、高中美术基础课程、美术高考，打造覆盖全龄段的素质教育平台，以面授、图书、网校三位一体的教学体系，提升孩子的美术素养。"
+            role="group" aria-label="3 / 4" style="width: 294.5px; margin-right: 2px;"><a href="javascript:ajax(15346);"
+              style="display: block;font-size: 30px;">学历教育</a></div>
+          <div class="swiper-slide swiper-slide-visible swiper-slide-thumb-active"
+            data-description="艾艺在线是国内艺术在线教育的先行者，拥有广泛社会优质美育资源和专业的在线名师团队，以此组建专家团队进行美术教学内容研发与拓展，互联网双师互动教学的研发，全面覆盖互联网美术教育。 教研内容包括中小学艺术素养课程、高中美术基础课程、美术高考以及文化、兴趣类课程，所有课程内容都以艾艺在线平台和双师课堂为载体，以精品录播和互动直播的形式传递给学生。艾艺在线还联合国内外多家美育出版和教研机构，开展针对低龄段的艺术启蒙课程研发。"
+            role="group" aria-label="4 / 4" style="width: 294.5px; margin-right: 2px;"><a href="javascript:ajax(15345);"
+              style="display: block;font-size: 30px;">在线平台</a></div>
+        </div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
+      <div class="itr" id="description">
+        艾艺在线是国内艺术在线教育的先行者，拥有广泛社会优质美育资源和专业的在线名师团队，以此组建专家团队进行美术教学内容研发与拓展，互联网双师互动教学的研发，全面覆盖互联网美术教育。
+        教研内容包括中小学艺术素养课程、高中美术基础课程、美术高考以及文化、兴趣类课程，所有课程内容都以艾艺在线平台和双师课堂为载体，以精品录播和互动直播的形式传递给学生。艾艺在线还联合国内外多家美育出版和教研机构，开展针对低龄段的艺术启蒙课程研发。
+      </div>
+    </div>
+    <div class="swiper-container swiper-container-initialized swiper-container-vertical" id="scroll">
+      <div class="swiper-wrapper" id="swiper-wrapper-1c84761a76b6bf19" aria-live="off"
+        style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style="height: 732px;">
+          <div>2003年 成立印象美术工作室 </div>
+          <div>2005年 成立荷马画室 </div>
+          <div>2008年 注册成立重庆九龙坡区艺考美术培训学校（简称“重庆艺考”） <p>于九龙坡区黄桷坪成立校区</p>
+          </div>
+          <div>2009年 注册成立重庆艾艺文化传播有限公司 </div>
+          <div>2011年 于九龙坡区黄桷坪102艺术基地成立重庆艺考102校区 </div>
+        </div>
+        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3" style="height: 732px;">
+          <div>2014年 注册成立重庆市沙坪坝区荷马教育培训学校（简称“荷马教育”） <p>于沙坪坝区大学城成立荷马教育富力城校区</p>
+          </div>
+          <div>2015年 于沙坪坝区大学城西永微电园成立荷马教育西永校区 </div>
+          <div>2016年 注册成立重庆艾艺荷马教育科技股份有限公司（公司进行股份制改造） <p>艾艺荷马获超亿元首轮融资</p>
+            <p>同年在重庆、四川、云南、浙江、河南、广东、贵州等省市开设分校，布局全国</p>
+            <p>注册成立重庆云君教育科技有限公司（简称“艾艺在线”）</p>
+            <p>艾艺在线网校成立，开启o2o运营模式</p>
+          </div>
+          <div>2017年 于沙坪坝区教育培训创意产业园成立荷马教育虎溪校区 </div>
+        </div>
+        <div class="swiper-slide" role="group" aria-label="3 / 3" style="height: 732px;">
+          <div>2018年 注册成立沙坪坝区荷马文化艺术培训学校 <p>艾艺荷马获超亿元B轮融资</p>
+            <p>注册成立四川新华荷马教育科技有限公司</p>
+          </div>
+          <div>2019年 注册成立北京艾艺荷马教育科技有限公司 <p>注册成立宁夏荷马文化艺术培训学校有限公司</p>
+            <p>注册成立山东艾艺荷马教育科技有限公司；</p>
+            <p>注册成立河北艺中荷马教育科技有限公司；</p>
+            <p>在江西、内蒙古、福建、安徽等省市开设分校；</p>
+          </div>
+          <div>2020年 荷马东川中学正式竣工 <p>青少儿美术培训20+校区投入运营</p>
+            <p>成立济南校区</p>
+            <p>成立浙江赣州校区</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-scrollbar">
+        <div class="swiper-scrollbar-drag"
+          style="height: 239px; transform: translate3d(0px, 0px, 0px); background: rgb(196, 18, 18); width: 8px; left: -1px; transition-duration: 0ms;">
+        </div>
+      </div>
+      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+  </div>
+  <!--底部-->
+  <script>
+    $(function () {
+      var mySwiper = new Swiper('.jj #jjswiper', {
+        //loop: true, // 循环模式选项
+        autoplay: true,
+        thumbs: {
+          swiper: {
+            el: '#thumbs',
+            spaceBetween: 2,
+            slidesPerView: 4,
+            watchSlidesVisibility: true,
+            /* 避免出现bug */
+          },
+          slideThumbActiveClass: 'swiper-slide-thumb-active',
+          thumbsContainerClass: 'swiper-container-thumbs',
+
+        },
+        on: {
+          slideChangeTransitionStart: function () {
+            if (!this.activeIndex) {
+              this.activeIndex = 0;
+            }
+
+            console.log(this.activeIndex)
+            var description = $('.swiper-container-thumbs .swiper-slide').eq(this.activeIndex)[0].dataset.description;
+            $('#description').html(description)
+
+
+          },
+        },
+      })
+
+      var mySwipers = new Swiper('#scroll', {
+        //loop: true, // 循环模式选项
+        autoplay: true,
+        direction: 'vertical',
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+      mySwipers.scrollbar.$dragEl.css('background', '#C41212');
+      mySwipers.scrollbar.$dragEl.css('width', '8px');
+      mySwipers.scrollbar.$dragEl.css('left', '-1px');
+
+      $("#scroll").on("mouseenter", function () {
+        mySwipers.autoplay.stop();
+      }).on("mouseleave", function () {
+        mySwipers.autoplay.start();
+      })
+    })
+  </script>
+  <div class="footer">
+
+    <div class="top">
+
+        <div class="footer-top-inside">
+
+            <div class="flogo"><a href="http://www.ayhmjy.com/">
+
+                    <img src="<?php  $tagGlobal = new \think\template\taglib\eyou\TagGlobal; $__VALUE__ = $tagGlobal->getGlobal("web_templets_pc"); echo $__VALUE__; ?>/skin/img/29750ef407dbabccdf17d9257049eeb9.png">
+
+                </a></div>
+
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=770935666&amp;site=qq&amp;menu=yes"
+                class="qq"></a>
+
+            <a href="https://weibo.com/p/1006062284049645/home?from=page_100606&amp;mod=TAB#place" target="_blank">
+                <div class="weibo"></div>
+            </a>
+
+            <div class="tel"></div>
+
+            <ul>
+
+                <li>友情链接</li>
+
+
+                <li>
+
+                    <a href="https://p.qiao.baidu.com/cps/chat?siteId=14981019&amp;userId=29479597"
+                        target="_blank">美考资讯内容及所有图片来源于网络，如有侵权，请联系删除！</a>
+
+                </li>
+
+
+            </ul>
+
+            <div class="tell">招生合作电话：17323832826</div>
+
+            <div class="er"
+                style="background: url(/upload/admin/20210726/f870ddb3f7622f21e7311df467f99252.jpg) no-repeat center center/100%;">
+            </div>
+
+            <div class="itr">扫码关注</div>
+
+            <div class="bei">重庆艾艺荷马教育科技股份有限公司版权所有备案号： <a style="font-size: 14px;" target="_blank"
+                    href="https://beian.miit.gov.cn/#/Integrated/index"> 渝ICP备16006556号-4</a></div>
+
+        </div>
+
+    </div>
+
+    <div class="bottom"></div>
+
+</div>
+
+</body>
+
+</html>

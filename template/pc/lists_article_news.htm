@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="{eyou:global name='web_keywords' /}">
+    <!-- 页面描述 -->
+    <meta name="description"
+        content="{eyou:global name='web_description' /}">
+    <title>{eyou:global name='web_title' /}</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/aos.css">
+    <link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/swiper.min.css">
+    <link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/main.css">
+
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/aos.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/swiper.min.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/dyfrom.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/main.js"></script>
+
+</head>
+
+<body>
+	{eyou:include file='header.htm' /}
+	<div class="nbanner">
+		<img src="{eyou:global name='web_templets_pc' /}/skin/img/bmskc.jpg">
+	</div>
+	{eyou:include file='searchbar.htm' /}
+	<div id="mkzxcontent">
+		<!-- <div class="area">
+			<div data-id="60">北京</div>
+			<div data-id="65">上海</div>
+			<div data-id="66">天津</div>
+			<div data-id="67">山东</div>
+			<div data-id="68">山西</div>
+			<div data-id="69">黑龙江</div>
+			<div data-id="70">河北</div>
+			<div data-id="71">陕西</div>
+			<div data-id="72">河南</div>
+			<div data-id="73">福建</div>
+			<div data-id="74">广西</div>
+			<div data-id="75">江西</div>
+			<div data-id="76">内蒙古</div>
+			<div data-id="77">安徽</div>
+			<div data-id="78">湖南</div>
+			<div data-id="79">浙江</div>
+			<div data-id="80">江苏</div>
+			<div data-id="81">重庆</div>
+			<div data-id="82">云南</div>
+			<div data-id="83">四川</div>
+			<div data-id="84">甘肃</div>
+			<div data-id="85">贵州</div>
+			<div data-id="86">辽宁</div>
+			<div data-id="87">新疆</div>
+			<div data-id="88">广东</div>
+			<div data-id="89">海南</div>
+			<div data-id="90">吉林</div>
+			<div data-id="91">湖北</div>
+			<div data-id="92">宁夏</div>
+			<div data-id="93">青海</div>
+			<div data-id="94">西藏</div>
+			<div data-id="1306">台湾</div>
+		</div> -->
+		<div class="btnarr" style="display: none;">
+			<a class="btn"
+				href=""><span>联考信息</span> <img
+					src="{eyou:global name='web_templets_pc' /}/skin/img/btnarr.png" alt=""></a>
+		</div>
+		<div class="school-list school" style="display: none;">
+			<ul><!-- ajax渲染内容--></ul>
+			<div class="more">
+				<a href="">更多</a>
+			</div>
+		</div>
+		<div class="news">
+			<div class="sw">
+				<div class="swiper1">
+					{eyou:artlist loop="10" typeid="103" infolen="18" }
+					<a href="{$field.arcurl}">
+						<img src="{eyou:global name='web_templets_pc' /}/skin/img/3f208eb22ca197a8859dc32295450143.png" alt="...">
+						<div class="t">{$field.title}</div>
+					</a>
+					{/eyou:artlist}
+				</div>
+				<div class="swiper1">
+					{eyou:artlist loop="10" typeid="90" infolen="18" }
+					<a href="{$field.arcurl}">
+						<img src="{eyou:global name='web_templets_pc' /}/skin/img/3f208eb22ca197a8859dc32295450143.png" alt="...">
+						<div class="t">{$field.title}</div>
+					</a>
+					{/eyou:artlist}
+				</div>
+			</div>
+			<div class="zx">
+				<div class="title">最新资讯 <span>LATEST INFORMATION</span></div>
+				<div class="text_onnav_left_com">
+					<ul>
+						{eyou:artlist loop="10" typeid="85" infolen="18" }
+						<li>
+							<a href="{$field.arcurl}" class="nav_top">
+								<i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png"> </i>
+								<span>{$field.title}</span>
+								<i class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png"> </i>
+								<label>{$field.add_time|MyDate='Y-m-d',###}</label>
+							</a>
+						</li>
+						{/eyou:artlist}
+
+					</ul>
+					<div class="txt_hot">
+						<a href="/index.php?m=home&c=Lists&a=index&tid=85">
+							更多<label> FINE OUTMORE</label>
+							<i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="School_examination">
+			<div class="School_examination_com">
+				<div class="School_examination_com_page  com_page01">
+					<div class="nav_titi_name">
+						<span class="nav_titi_name_a">美术统考</span>
+						<span class="nav_titi_name_b">
+							<label>ARTS AND CRAFTS</label>
+						</span>
+						<label class="nav_titi_name_c"></label>
+					</div>
+					<div class="schoolcom">
+						<div class="layui-tab layui-tab-card schooltop">
+							<div class="page_table"></div>
+							<ul class="layui-tab-title">
+								<li class="layui-this">联考公告</li>
+								<li class="">联考合格线</li>
+								<li class="">联考成绩</li>
+								<li class="">联考录取线</li>
+							</ul>
+							<div class="layui-tab-content">
+
+								<div class="layui-tab-item  layui-show">
+									{eyou:artlist loop="10" typeid="90" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=90"><span>更多</span><label>
+												FINE OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+								<div class="layui-tab-item">
+									{eyou:artlist loop="10" typeid="91" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=91"><span>更多</span><label>
+												FINE OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+								<div class="layui-tab-item">
+									{eyou:artlist loop="10" typeid="92" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=92"><span>更多</span><label>
+												FINE OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+								<div class="layui-tab-item">
+									{eyou:artlist loop="10" typeid="104" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=104"><span>更多</span><label>
+												FINE OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="School_examination_com_page school_page2  com_page02">
+					<div class="nav_titi_name">
+						<span class="nav_titi_name_a">校考信息</span>
+						<span class="nav_titi_name_b">
+							<label>SCHOOL INFORMATION</label>
+
+						</span>
+						<label class="nav_titi_name_c"></label>
+					</div>
+					<div class="schoolcom">
+						<div class="layui-tab layui-tab-card schooltop2">
+							<div class="page_table"></div>
+							<ul class="layui-tab-title">
+								<li class="layui-this">校考简章</li>
+								<li class="">考试时间</li>
+								<li class="">录取线</li>
+								<li class="">合格线</li>
+							</ul>
+							<div class="layui-tab-content">
+								<div class="layui-tab-item  layui-show">
+									{eyou:artlist loop="10" typeid="93" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=93"><span>更多</span><label>
+												FINE OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+								<div class="layui-tab-item ">
+									{eyou:artlist loop="10" typeid="94" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=94"><span>更多</span><label>
+												FINE OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+								<div class="layui-tab-item ">
+									{eyou:artlist loop="10" typeid="95" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=95"><span>更多</span><label>
+												FINE OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+								<div class="layui-tab-item ">
+									{eyou:artlist loop="10" typeid="96" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=96"><span>更多</span><label>
+												FINE OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="School_examination_com_page com_page03">
+					<div class="nav_titi_name">
+						<span class="nav_titi_name_a">历年真题</span>
+						<span class="nav_titi_name_b">
+							<label>HISTORICAL TITLE</label>
+
+						</span>
+						<label class="nav_titi_name_c"></label>
+					</div>
+					<div class="schoolcom">
+						<div class="layui-tab layui-tab-card schooltop">
+							<div class="page_table"></div>
+							<ul class="layui-tab-title">
+								<li class="layui-this">联考真题</li>
+								<li class="">校考真题</li>
+								<li class="">优秀试卷</li>
+							</ul>
+							<div class="layui-tab-content">
+								<div class="layui-tab-item  layui-show">
+									{eyou:artlist loop="10" typeid="97" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=97"><span>更多</span><label> FINE
+												OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+								<div class="layui-tab-item ">
+									{eyou:artlist loop="10" typeid="98" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=98"><span>更多</span><label> FINE
+												OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+								<div class="layui-tab-item ">
+									{eyou:artlist loop="10" typeid="99" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=99"><span>更多</span><label> FINE
+												OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="School_examination_com_page school_page2 com_page04">
+					<div class="nav_titi_name">
+						<span class="nav_titi_name_a">美术辅导</span>
+						<span class="nav_titi_name_b">
+							<label>ART TUTORING</label>
+
+						</span>
+						<label class="nav_titi_name_c"></label>
+					</div>
+					<div class="schoolcom">
+						<div class="layui-tab layui-tab-card schooltop2">
+							<div class="page_table"></div>
+							<ul class="layui-tab-title">
+								<li class="layui-this">色彩指导</li>
+								<li class="">速写指导</li>
+								<li class="">素描指导</li>
+								<li class="">其他</li>
+							</ul>
+							<div class="layui-tab-content">
+								<div class="layui-tab-item  layui-show">
+									{eyou:artlist loop="10" typeid="100" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=100"><span>更多</span><label> FINE OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+								<div class="layui-tab-item ">
+									{eyou:artlist loop="10" typeid="101" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=101"><span>更多</span><label> FINE OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+								<div class="layui-tab-item ">
+									{eyou:artlist loop="10" typeid="102" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=102"><span>更多</span><label> FINE OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+								<div class="layui-tab-item ">
+									{eyou:artlist loop="10" typeid="103" infolen="16" }
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+									<div class="layuitxt_hot">
+										<a href="/index.php?m=home&c=Lists&a=index&tid=103"><span>更多</span><label> FINE OUT
+												MORE</label><i><img src="{eyou:global name='web_templets_pc' /}/skin/img/right_icon.png"></i></a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!--热门阅读-->
+		<div class="yueducom">
+			<div class="youcomnav">
+				<div class="title">
+					<strong>热门阅读</strong><span>HOT READING</span>
+				</div>
+			</div>
+			<div class="yuedubox">
+				{eyou:artlist loop="10" typeid="85" infolen="16" flag="a"}
+
+									<a href="{$field.arcurl}"><i class="dian"><img src="{eyou:global name='web_templets_pc' /}/skin/img/dian.png">
+										</i>
+										<span>{$field.title}</span><label>{$field.add_time|MyDate='Y-m-d',###}</label><i
+											class="hot"><img src="{eyou:global name='web_templets_pc' /}/skin/img/hot.png">
+										</i> </a>
+									{/eyou:artlist}
+			</div>
+
+		</div>
+	</div>
+	{eyou:include file='footer.htm' /}
+	<!-- ayhmjy.com Baidu tongji analytics -->
+
+
+
+
+
+	<script type="text/javascript">
+		$('#mkzxcontent .area div').click(function () {
+			$('.btnarr').show();
+			$('.school-list').show();
+			var sid = $(this).attr("data-id");
+			$.ajax({
+				url: '/home/type/colleges?typeid=' + sid + '?ajax=1',
+				type: 'post',
+				async: false,
+				cache: false,
+				dataType: "json",
+				success: function (data) {
+					console.log(data);
+					var html = '';
+					for (var i = 0; i < data.colleges.length; i++) {
+						html += '<li><a href="' + data.colleges[i].url + '"><i></i>' + data.colleges[i].typename + '</a></li>';
+					}
+					$(".btnarr .btn").attr('href', data.url);
+					$(".btnarr .btn span").html(data.typename + '联考信息');
+					$(".more a").attr('href', data.url);
+					$(".school-list ul").html(html);
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>

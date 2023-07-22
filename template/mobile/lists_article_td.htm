@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html style="font-size: 25px;">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="{$eyou.field.seo_keywords}">
+	<!-- 页面描述 -->
+	<meta name="description" content="{$eyou.field.seo_description}">
+	<title>{$eyou.field.seo_title}</title>
+    <link rel="stylesheet" href="{eyou:global name='web_templets_m' /}/skin/css/aos.css">
+    <link rel="stylesheet" href="{eyou:global name='web_templets_m' /}/skin/css/swiper.min.css">
+    <link rel="stylesheet" href="{eyou:global name='web_templets_m' /}/skin/css/main.css">
+
+    <script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/aos.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/swiper.min.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/dyfrom.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/main.js"></script>
+</head>
+
+<body>
+
+	<div class="no" style="padding-bottom: 50px;">
+		{eyou:include file='header.htm' /}
+
+
+		<div class="nbanner">
+
+			<img src="{eyou:global name='web_templets_m' /}/skin/img/bszll.jpg">
+
+		</div>
+
+		<div class="menubg">
+			<div class="smenu">
+				<div
+					class="swiper-container">
+					<ul class="swiper-wrapper">
+						{eyou:channel type='son' typeid='69' currentclass='activecoler'}
+						<li class="swiper-slide"><a href="{$field.typeurl}"><span>{$field.typename}</span></a></li>
+						{/eyou:channel}
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="mbg" style="min-height: 593px;">
+
+			<div class="szlist">
+				<ul>
+					{eyou:list aid='$field.aid' addfields='zhiwei'}
+
+					<li><a>
+
+							<div class="img"><img src="{$field.litpic}"></div>
+
+							<div class="txt">
+
+								<div class="title over1">{$field.title}</div>
+
+								<div class="desc over1">{$field.zhiwei}</div>
+
+							</div>
+
+						</a></li>
+
+						{/eyou:list}
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+	{eyou:include file='footer.htm' /}
+</body>
+
+</html>

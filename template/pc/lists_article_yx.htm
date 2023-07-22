@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="{eyou:global name='web_keywords' /}">
+    <!-- 页面描述 -->
+    <meta name="description"
+        content="{eyou:global name='web_description' /}">
+    <title>{eyou:global name='web_title' /}</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/aos.css">
+    <link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/swiper.min.css">
+    <link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/main.css">
+
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/aos.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/swiper.min.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/dyfrom.js"></script>
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/main.js"></script>
+</head>
+
+<body>
+	{eyou:include file='header.htm' /}
+	<div class="nbanner">
+		<img src="{eyou:global name='web_templets_pc' /}/skin/img/bmskc.jpg">
+	</div>
+	{eyou:include file='searchbar.htm' /}
+	<div class="xyinfo">
+		<div class="warpper">
+			<div class="top">
+				<div class="pname">院校级别</div>
+				<div class="activeclidk">
+					{eyou:channel type='son' typeid='108' currentclass='activecoler'}
+					<span class="hegexian {$field.currentclass}"><a
+						href="{$field.typeurl}">{$field.typename}</a></span>
+					{/eyou:channel}
+				</div>
+			</div>
+			<div class="list1">
+				<ul>
+					{eyou:list loop="10" }
+					<li><a href="{$field.arcurl}">
+						<div class="img"><img src="{$field.litpic}"></div>
+						<div class="txt over1">{$field.title}</div>
+					</a></li>
+					{/eyou:list}
+					
+				</ul>
+			</div>
+			<div class="paging" id="paging">
+				<ul class="pageulcom">{eyou:pagelist listitem="pre,next,pageno"  listsize="5" /}</ul>
+			</div>
+		</div>
+	</div>
+	{eyou:include file='footer.htm' /}
+</body>
+
+</html>

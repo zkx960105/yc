@@ -1,0 +1,87 @@
+<div class="fnav">
+	<ul>
+		<li><a href="/">
+				<i><img src="{eyou:global name='web_templets_m' /}/skin/img/mv01.png"></i>
+				<span>首页</span>
+			</a></li>
+		<li><a href="">
+				<i><img src="{eyou:global name='web_templets_m' /}/skin/img/mv02.png"></i>
+				<span>招生简章</span>
+			</a></li>
+		<li><a href="tel:">
+				<img src="{eyou:global name='web_templets_m' /}/skin/img/mc.png">
+			</a></li>
+		<li><a
+				href="">
+				<i><img src="{eyou:global name='web_templets_m' /}/skin/img/mv03.png"></i>
+				<span>咨询</span>
+			</a></li>
+		<li><a>
+				<i><img src="{eyou:global name='web_templets_m' /}/skin/img/mv04.png"></i>
+				<span>报名</span>
+			</a></li>
+	</ul>
+</div>
+
+<div class="toTop" style="display: none;"></div>
+
+<div class="modal" style="">
+	{eyou:guestbookform type='default' typeid='105'}
+		<form method="POST" {$field.formhidden} action="{$field.action}" onsubmit="{$field.submit}"
+			id="message-form-index">
+		<div class="content">
+			<div class="close" style="height: 0.98rem;text-align: right;font-size:0.64rem;line-height:0.98rem;">x 
+			</div>
+			<div class="modal-title">在线报名</div>
+			<div class="inputwrapper">
+				<div class="right">
+					<input type='text' id='attr_26' name='{$field.attr_26}' class="name" placeholder="请输入姓名">
+					<div class="cha chan"></div>
+				</div>
+			</div>
+			<div class="inputwrapper">
+				<div class="right">
+					<input type='text' id='attr_27' name='{$field.attr_27}' class="phone" placeholder="输入电话号码">
+					<div class="cha chap"></div>
+				</div>
+			</div>
+			<div class="inputwrapper list">
+				<div class="right">
+					<select name='{$field.attr_29}' id='attr_29' style="width: 100%;height: 100%;    border-radius: 0px 0.08rem 0.08rem 0px;
+								 color: #fff;padding-left: .2rem;box-sizing: border-box;">
+									<option value='无'>无</option>
+									{eyou:volist name='$field.options_29' id='vo'}
+									<option value='{$vo.value}'>{$vo.value}</option>
+									{/eyou:volist}
+								</select>
+					<!-- <input type="hidden" name="banji" id="class_name" value="">
+					<input type="text" value="选择班级" readonly="" style="color: #999;">
+					<div class="cha chab"></div>
+					<ol class="ul">
+						<li>名校定制班</li>
+						<li>央清班</li>
+						<li>金牌定制班</li>
+						<li>校长旗舰班</li>
+						<li>重点班</li>
+						<li>校长VIP班</li>
+						<li>周末班</li>
+						<li>暑假班</li>
+						<li>寒假班</li>
+						<li>央清培优班</li>
+
+					</ol> -->
+				</div>
+			</div>
+			<div class="inputwrapper">
+				<div class="right">
+					<input type='text' id='attr_28' name='{$field.attr_28}' class="qq" placeholder="输入QQ号码">
+					<div class="cha chaq"></div>
+				</div>
+			</div>
+			<input type="submit" class="btn postdata" value="">
+			<!-- <div class="btn1"></div> -->
+		</div>
+		{$field.hidden}
+	</form>
+	{/eyou:guestbookform}
+</div>
