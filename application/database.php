@@ -21,7 +21,7 @@ return array(
     // 用户名
     'username'        => 'hdm721905579',
     // 密码
-    'password'        => 'Zkx960105',
+    'password'        => '',
     // 端口
     'hostport'        => '3306',
     // 连接dsn
